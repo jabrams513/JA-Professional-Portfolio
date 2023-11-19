@@ -1,11 +1,12 @@
-:root{
---bluegreen: rgba(127, 255, 212, 0.644);
---charcoal: rgb(78, 78, 78);
+:root {
+    --bluegreen: rgba(127, 255, 212, 0.644);
+    --charcoal: rgb(78, 78, 78);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -17,18 +18,18 @@ header {
     align-items: center;
 }
 
-nav{
+nav {
     width: 50vw;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
     font-size: 16pt;
     color: var(--bluegreen);
     border-bottom: 4px solid var(--bluegreen);
@@ -36,28 +37,34 @@ nav ul li{
     padding: 3px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header h1{
-background-color: var(--bluegreen);
-/* height: 5vh; */
-height: fit-content;
-padding: 3px 15px;
+header h1 {
+    background-color: var(--bluegreen);
+    height: fit-content;
+    padding: 3px 15px;
 }
 
-.hero-banner{
+.hero-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./banner.jpg");
     height: 20vh;
     background-size: cover;
     position: relative;
 }
 
-.hero-banner h2{
-    color: var(--bluegreen);
+.hero-banner h2 {
+    color: var(--charcoal);
     position: absolute;
-    right: 10px;
+    right: 30px;
     bottom: 10px;
+    background-color: var(--bluegreen);
 }
 
+.page-section {
+    border-right: 3px solid var(--charcoal);
+    color: var(--charcoal);
+    font-size: 20pt;
+    padding-right: 20px;
+}
