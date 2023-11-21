@@ -9,6 +9,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body{
+    max-width: 100vw;
+}
+
 header {
     background-color: var(--charcoal);
     padding: 5px;
@@ -21,6 +25,7 @@ header {
 nav {
     width: 50vw;
 }
+
 
 nav ul {
     display: flex;
@@ -39,6 +44,7 @@ nav ul li {
 
 a {
     text-decoration: none;
+    padding: 5px;
 }
 
 header h1 {
@@ -63,10 +69,10 @@ header h1 {
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
 }
 
 .page-section {
@@ -74,14 +80,16 @@ header h1 {
     font-size: 20pt;
     padding-right: 20px;
     width: 100vw;
-    margin: 5% 10% 5% 10%;
+    /* margin: 5%; */
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 section h2 {
     border-right: 5px solid var(--bluegreen);
     text-align: right;
     margin-right: 30px;
+    /* min-width: 20%; */
 }
 
 p {
@@ -111,4 +119,47 @@ figcaption {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.bottomNav li {
+    justify-content: space-around;
+}
+
+#pic1{
+    display: block;
+    min-width: 60%;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 25%;
+}
+
+
+/* office hours */
+
+.testbox{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+
+.testbox h2{
+ min-width: 20%;
+}
+
+.portfoliotest {
+    max-width: 70%;
+}
+
+.page-section h2{
+    min-width: 20%;
 }
