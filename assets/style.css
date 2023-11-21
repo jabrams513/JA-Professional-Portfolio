@@ -147,3 +147,7 @@ figcaption {
     max-width: 70%;
     margin: 5%;
 }
+
+#profPic {
+    height: 150px;
+}
